@@ -49,6 +49,7 @@ height: 35px;
     display: flex;
     align-items: center;
     gap:15px;
+    user-select: none;
 }
 
 .social_links{
@@ -57,6 +58,12 @@ height: 35px;
     gap:10px;
 }
 
+.auth_btn{
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
 .menu_btn{
     width: 42px;
     height: 42px;

@@ -1,11 +1,14 @@
 import React from 'react'
+import AuthPopup from '../../../components/AuthPopup/AuthPopup'
 import Footer from '../../../components/Footer/Footer'
 import Navbar from '../../../components/Navbar/Navbar'
 
 function index() {
     return (
         <div>
+            <AuthPopup/>
             <Navbar/>
+
             <section className='post-detail-section'>
                 <div className='post-detail-thumb'>
                     <img src="/firstpost.jpg" alt="post-thumb"/>

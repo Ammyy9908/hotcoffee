@@ -2,7 +2,15 @@ import Link from 'next/link'
 import React from 'react'
 import styles from './Navbar.module.css'
 import {MdMenu} from "react-icons/md"
+import AppContext from "../../store/_appContext"
 function Navbar() {
+
+    const {user,setUser,auth_modal,setAuthModal} = React.useContext(AppContext);
+    
+
+    const handleAuthModal = ()=>{
+        setAuthModal(true);
+    }
     return (
         <div className={styles.header}>
             <div className={styles.header_wrapper}>
@@ -17,6 +25,7 @@ function Navbar() {
                     <nav className={styles.navbar}>
                         <Link href="/"><a>Home</a></Link>
                         <Link href="/about"><a>Articles</a></Link>
+                        <button onClick={handleAuthModal} className={styles.auth_btn}>Login</button>
                         
                             <a href="#"><img src="/instagram.svg" alt="" /></a>
                             <a href="#"><img src="/twitter.svg" alt="" /></a>
