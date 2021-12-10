@@ -1,5 +1,5 @@
 .hero{
-    height: 467px;
+    height: 567px;
     background-color: #FBFBFB;
 }
 .hero_section{
@@ -52,7 +52,8 @@ color: #4A5568;
 
 @media screen and (max-width: 978px) {
     .hero_section > img{
-      display: none;
+      z-index: 1;
+      transform: scale(0.8);
     }
     .hero_section{
         display: block;
@@ -60,6 +61,7 @@ color: #4A5568;
     }
     .hero_content{
         width:auto;
+        z-index: 2;
     }
    
   }
