@@ -13,8 +13,8 @@ export const AppContextProvider = ({children})=>{
     const [user,setUser] = useState(null);
     const [auth_modal,setAuthModal] = useState(false);
     const [authType,setAuthType] = useState('login');
-
-    const context = {user,setUser,auth_modal,setAuthModal,authType,setAuthType};
+    const [sidebar,setSidebar] = useState(false);
+    const context = {user,setUser,auth_modal,setAuthModal,authType,setAuthType,sidebar,setSidebar};
 
     return (
         <AppContext.Provider value={context}>

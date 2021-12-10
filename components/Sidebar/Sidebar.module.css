@@ -1,0 +1,123 @@
+.sidebar{
+    width: 340px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px -40px 80px rgba(0, 0, 0, 0.07), 0px -12.0588px 24.1177px rgba(0, 0, 0, 0.0459797), 0px -5.00862px 10.0172px rgba(0, 0, 0, 0.0349382), 0px -1.81152px 3.62304px rgba(0, 0, 0, 0.0245216);
+border-radius: 0px 10px 10px 0px;
+left: -500px;
+}
+.sidebar__enable{
+    left: 0;
+}
+
+.sidebar_header{
+    width: 90%;
+    margin: 15px auto;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidebar_header a{
+    font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+}
+.active_link{
+    background-color: #F3F5F5;
+}
+.sidebar_header button{
+    background-color: #F3F5F5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.sidebar_header button svg{
+    width:23px;
+    height: 23px;
+}
+
+.sidebar_links{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+}
+.sidebar_links a{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    
+}
+
+.link_wrapper{
+    width:95%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.sidebar__footer{
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    background-color:#F3F5F5;
+}
+.sidebar__footer_wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 86px;
+    justify-content: space-between;
+    
+}
+.sidebar__footer_meta{
+    display: flex;
+    align-items: flex-start;
+    gap:10px;
+}
+.user__info{
+    display: flex;
+    flex-direction: column;
+}
+.user__info > span:nth-child(1){
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+.user__info > a{
+    font-size: 12px;
+    color: #828282;
+}
+.user_avatar{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+.user_avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.sidebar_footer_more_btn{
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border:1px solid transparent;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.sidebar_footer_more_btn:hover{
+    background-color: #838383;
+}

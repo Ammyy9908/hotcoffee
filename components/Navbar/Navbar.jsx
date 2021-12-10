@@ -5,7 +5,7 @@ import {MdMenu} from "react-icons/md"
 import AppContext from "../../store/_appContext"
 function Navbar() {
 
-    const {user,setUser,auth_modal,setAuthModal} = React.useContext(AppContext);
+    const {user,setUser,auth_modal,setAuthModal,setSidebar,sidebar} = React.useContext(AppContext);
     
 
     const handleAuthModal = ()=>{
@@ -34,7 +34,9 @@ function Navbar() {
                     </nav>
                 </div>
 
-                <button className={styles.menu_btn}>
+                <button className={styles.menu_btn} onClick={()=>{
+                    setSidebar(!sidebar)
+                }}>
                     <MdMenu/>
                 </button>
             </div>

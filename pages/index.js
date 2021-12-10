@@ -11,16 +11,20 @@ import {MdArrowDropDown} from "react-icons/md"
 import Footer from '../components/Footer/Footer'
 import AuthPopup from '../components/AuthPopup/AuthPopup'
 import AppContext from '../store/_appContext'
+import Sidebar from '../components/Sidebar/Sidebar'
 
 
 export default function Home() {
 
-  const {auth_modal} = React.useContext(AppContext)
+  const {auth_modal,setSidebar} = React.useContext(AppContext);
   
   return (
-    <div className={`${styles.container} ${auth_modal && "overflow-hidden"}`}>
+    <div className={`${styles.container} ${auth_modal && "overflow-hidden"}`} tabIndex="1" onFocus={()=>{
+      setSidebar(false);
+    }}>
 
       <AuthPopup/>
+      <Sidebar/>
       <Head>
         <title>HotCoffee</title>
         <link rel="icon" href="/coffee.svg"/>
