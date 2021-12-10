@@ -14,7 +14,7 @@ function LatestPostCard() {
                     <Link href="/d/1"><a>Read more</a></Link>
                 </div>
             </div>
-            <img src="/firstpost.jpg" alt="" />
+            <img src="/firstpost.jpg" alt="" className={styles.latest_post_thumb}/>
         </div>
     )
 }

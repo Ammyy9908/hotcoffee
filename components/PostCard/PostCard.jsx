@@ -6,6 +6,7 @@ function PostCard({image}) {
         <div className={styles.post_card}>
             <div className={styles.post_card_thumb}>
                 <img src={image} alt="card-thumb" />
+                <div className={styles.post_card_gradient}></div>
             </div>
             <div className={styles.card_content}>
                 <div className={styles.card_title}>
